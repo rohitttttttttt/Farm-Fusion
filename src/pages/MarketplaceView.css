@@ -1,0 +1,30 @@
+.heading{
+  text-align: justify;
+  font-size: larger;
+  color: black;
+}
+.product-grid-container {
+  background-color: white;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+
+.product-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+
+@media (min-width: 640px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
